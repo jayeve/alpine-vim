@@ -117,7 +117,7 @@ RUN cd $UHOME/bundle/ \
     && git clone --depth 1 https://github.com/majutsushi/tagbar \
     && git clone --depth 1 https://github.com/vim-scripts/EasyGrep \
     && git clone --depth 1 https://github.com/jlanzarotta/bufexplorer \
-    && git clone --depth 1 https://github.com/kien/ctrlp.vim \
+    && git clone --depth 1 https://github.com/ctrlpvim/ctrlp.vim \
     && git clone --depth 1 https://github.com/scrooloose/nerdtree \
     && git clone --depth 1 https://github.com/jistr/vim-nerdtree-tabs \
     && git clone --depth 1 https://github.com/scrooloose/syntastic \
@@ -143,8 +143,8 @@ RUN cd $UHOME/bundle/ \
     && git clone --depth 1 https://github.com/ekalinin/Dockerfile.vim \
 # Theme
     && git clone --depth 1 \
-    https://github.com/altercation/vim-colors-solarized
-    
+    https://github.com/tpope/vim-vividchalk.git
+
 # Build default .vimrc
 RUN  mv -f $UHOME/.vimrc $UHOME/.vimrc~ \
      && curl -s \

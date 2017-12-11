@@ -33,9 +33,9 @@ let g:yankring_history_dir = '/home/developer/.vim_runtime/temp_dirs'
 """"""""""""""""""""""""""""""
 let g:ctrlp_working_path_mode = 0
 
-let g:ctrlp_map = '<c-f>'
+let g:ctrlp_map = '<c-p>'
 map <leader>j :CtrlP<cr>
-map <c-b> :CtrlPBuffer<cr>
+"map <c-b> :CtrlPBuffer<cr>
 
 let g:ctrlp_max_height = 20
 let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
@@ -54,7 +54,7 @@ set grepprg=/bin/grep\ -nH
 let g:NERDTreeWinPos = "right"
 let g:NERDTreeWinSize=50
 map <leader>nn :NERDTreeToggle<cr>
-map <leader>nb :NERDTreeFromBookmark 
+map <leader>nb :NERDTreeFromBookmark
 map <leader>nf :NERDTreeFind<cr>
 let NERDTreeShowHidden=1
 
@@ -125,7 +125,7 @@ nnoremap <Leader>, :bp<CR>
 " => color and theme
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set background=dark
-colorscheme solarized
+colorscheme vividchalk
 set relativenumber
 set number
 
@@ -133,10 +133,10 @@ set number
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Snippets
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:UltiSnipsExpandTrigger="<c-e>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipsEditSplit="vertical"
+"let g:UltiSnipsExpandTrigger="<c-e>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+"let g:UltiSnipsEditSplit="vertical"
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

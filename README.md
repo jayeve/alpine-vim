@@ -10,8 +10,10 @@
 
 ####  Based on ["The Ultimate vimrc"](https://github.com/amix/vimrc)  
 ###### **The best way to use:**  
+**Build the docker image from whatever directory the Dockerfile resides**
+`docker build -t vim:latest .`
 **Make an alias:**
-`alias edit='docker run -ti --rm -v $(pwd):/home/developer/workspace jare/vim-bundle'`
+`alias edit='docker run -ti --rm -v $(pwd):/home/developer/workspace vim:latest'`
 **Have fun!**  `edit some.file`
 *Also You can use  this one for getting updates:*  `alias edit_update="docker pull jare/vim-bundle:latest"`
 ###### **How to disable some plugins:**  
